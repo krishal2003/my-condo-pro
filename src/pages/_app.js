@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         ></script>
-        {/* <link rel="icon" href="logoo.jpg" /> */}
+        <link rel="icon" href="logoo.png" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
           rel="stylesheet"

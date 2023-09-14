@@ -14,7 +14,7 @@ export default function Home() {
       <>
         <Head>
           <title>Home | MyCondoPro</title>
-          <link rel="icon" href="https://i.ibb.co/pKsgzHh/logoo.png" />
+          <link rel="icon" href="https://ibb.co/k3NDQP0" />
         </Head>
         <Hero />
         <Register />

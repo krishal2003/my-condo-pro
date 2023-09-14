@@ -23,7 +23,7 @@ function Register() {
           </Typography>
         </Stack>
         <Stack alignItems="center" justifyContent="center">
-          <Button variant="large" sx={{ p: 2.7 }} className="register-now">
+          <Button color="error"  variant="contained" sx={{ p: 2.7 }} className="register-now">
             Register Now
           </Button>
         </Stack>
