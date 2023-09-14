@@ -23,8 +23,8 @@ function id() {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography variant="h4">BuildingName</Typography>
-                <Typography variant="h4">$ ListPrice</Typography>
+                <Typography variant="h4">Ajax</Typography>
+                <Typography variant="h4">$ 84888</Typography>
               </Box>
               <Box
                 display="flex"
@@ -32,10 +32,10 @@ function id() {
                 alignItems="center"
               >
                 <Typography variant="body1" sx={{ color: "text.disabled" }}>
-                  City, StateOrProvince
+                  Ottawa, Otanrio
                 </Typography>
                 <Typography variant="body1" sx={{ color: "text.disabled" }}>
-                  est.$ ListPrice /mo
+                  est.$ 8540 /mo
                 </Typography>
               </Box>
               <Box
@@ -47,12 +47,12 @@ function id() {
                   flexDirection={{ md: "row", sm: "column" }}
                   gap={{ md: "3", sm: "0" }}
                 >
-                  <Typography variant="body1">BedroomsTotal bed</Typography>
+                  <Typography variant="body1">8 bed</Typography>
                   <Typography variant="body1">
-                    BathroomsTotalInteger bath
+                    4 bath
                   </Typography>
                   <Typography variant="body1">
-                    BuildingAreaTotal sq m
+                    12021 sq m
                   </Typography>
                 </Stack>
                 <Typography variant="body1">For Sale</Typography>
@@ -133,7 +133,7 @@ function id() {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      OccupantName
+                      Ajay Devgan
                     </Typography>
                   </Stack>
                   <Stack flexDirection="row">
@@ -144,7 +144,7 @@ function id() {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      OccupantPhone
+                      9840058967
                     </Typography>
                   </Stack>
                   <Stack flexDirection="row">
@@ -155,7 +155,7 @@ function id() {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      BuildingAreaTotal sq m
+                      8547 sq m
                     </Typography>
                   </Stack>
                   <Stack flexDirection="row">
@@ -166,7 +166,7 @@ function id() {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      YearBuilt AD
+                      1985 AD
                     </Typography>
                   </Stack>
 
@@ -178,7 +178,7 @@ function id() {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      TaxYear AD
+                      1999 AD
                     </Typography>
                   </Stack>
                 </Stack>
@@ -192,7 +192,7 @@ function id() {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      OccupantName
+                      Ajay Degan
                     </Typography>
                   </Stack>{" "}
                   <Stack flexDirection="row">
