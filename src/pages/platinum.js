@@ -1,7 +1,7 @@
 import React from "react";
 
-function platinum() {
-  return <div>platinum</div>;
+function Platinum() {
+  return <div>Platinum</div>;
 }
 
-export default platinum;
+export default Platinum;

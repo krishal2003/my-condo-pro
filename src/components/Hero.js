@@ -38,7 +38,7 @@ const HeroSection = () => {
                 fullWidth
                 InputProps={{
                   endAdornment: (
-                    <Button color="error" variant="outlined" sx={{p:1.5,}}  className="searchButton">Search</Button>
+                    <Button color="error" variant="contained" sx={{p:1.5,}}  className="searchButton">Search</Button>
                   ),
                 }}
               />

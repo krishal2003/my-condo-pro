@@ -23,7 +23,7 @@ const cardData = [
   {
     imageSrc: "house2.jpg",
     title: "Reach ",
-    subtitle: "$`48000",
+    subtitle: "$48000",
     anotherSubtitle: "Vancover, Canada",
   },
   {

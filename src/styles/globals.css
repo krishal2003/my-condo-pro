@@ -124,14 +124,7 @@
   flex: 1;
 }
 
-.searchButton {
-  background-color: #bd0800;
-  color: #fff;
-}
-
 .searchButton:hover {
-  background-color: #bd0800;
-  color: #fff;
   opacity: 0.7;
 }
 
@@ -147,13 +140,9 @@
 .register-now {
   background-color: #bd0800;
   color: white;
-  border-radius: 30px;
 }
 .register-now:hover {
   background-color: #bd0800;
   color: white;
   opacity: 0.8;
-  border-radius: 30px;
 }
-
-

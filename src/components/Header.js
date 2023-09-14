@@ -183,7 +183,7 @@ const NavigationBar = () => {
                 variant="contained"
                 sx={{ borderRadius: "30px" }}
               >
-                Platanum Access
+                PlatInum Access
               </Button>
             </Link>
           </Nav>

@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }) {
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" />
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" />
-        <title>Baliyo Venture</title>
+        {/* <title>Baliyo Venture</title> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />

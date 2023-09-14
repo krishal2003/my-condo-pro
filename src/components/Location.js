@@ -22,7 +22,6 @@ function Location() {
     "New Market",
   ];
 
-  // Split the cities into groups of 6
   const cityGroups = [];
   for (let i = 0; i < cities.length; i += 6) {
     cityGroups.push(cities.slice(i, i + 6));
