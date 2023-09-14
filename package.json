@@ -1,0 +1,29 @@
+{
+  "name": "baliyo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "dev": " next dev -p 8000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.9",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "next": "13.2.4",
+    "popper.js": "^1.16.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "styled-components": "^5.3.9"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1"
+  }
+}

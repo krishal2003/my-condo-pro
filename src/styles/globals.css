@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Quicksand:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.plat {
+  background-color: #bd0800;
+}
+.nav {
+  color: black;
+  position: sticky;
+  top: 0;
+}
+
+.line {
+  width: "2px";
+  height: "100px";
+  background-color: "red";
+}
+
+.cities {
+  color: #bd0800;
+}
+
+/* footer  */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-right: 20px;
+}
+
+.quick-links {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px;
+  color: #bd0800;
+}
+
+.quick-links li.list-inline-item {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .quick-links li.list-inline-item {
+    display: block;
+  }
+}
+
+.navitems {
+  color: black;
+}
+
+/* hero */
+
+.hero-container {
+  position: relative;
+  height: 68vh;
+  background: url("/canada.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  position: absolute;
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+.title {
+  font-size: 3rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin-top: 16px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.searchInput {
+  flex: 1;
+}
+
+.searchButton {
+  background-color: #bd0800;
+  color: #fff;
+}
+
+.searchButton:hover {
+  background-color: #bd0800;
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* register */
+
+.register-body {
+  background-color: rgb(243, 242, 243);
+}
+.register {
+  color: #bd0800;
+  text-align: center;
+}
+.register-now {
+  background-color: #bd0800;
+  color: white;
+  border-radius: 30px;
+}
+.register-now:hover {
+  background-color: #bd0800;
+  color: white;
+  opacity: 0.8;
+  border-radius: 30px;
+}
+
+
