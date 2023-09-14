@@ -33,12 +33,11 @@ const HeroSection = () => {
             <div className="searchContainer">
               <TextField
                 className="searchInput"
-                variant="outlined"
                 placeholder="Search"
                 fullWidth
                 InputProps={{
                   endAdornment: (
-                    <Button color="error" variant="contained" sx={{p:1.5,}}  className="searchButton">Search</Button>
+                    <Button color="error" variant="contained" sx={{p:0.5,}}  className="searchButton">Search</Button>
                   ),
                 }}
               />

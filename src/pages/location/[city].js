@@ -7,6 +7,7 @@ import CondoCard from "@/components/CondoCard";
 function location() {
   const router = useRouter();
   const { city } = router.query;
+
   const imageOverlayStyle = {
     position: "absolute",
     top: 0,
@@ -25,7 +26,7 @@ function location() {
   return (
     <>
       <Head>
-        <title>Hello</title>
+        <title>{city} | MyCondosPro</title>
         <link rel="icon" href="logoo.png" />
       </Head>
       <div className="hero-container">
@@ -38,7 +39,7 @@ function location() {
       </div>
       <Stack flexDirection="row" justifyContent="center" gap={4} sx={{pt:5}}>
         <div style={lineStyle}></div>
-        <Typography variant="h4" textAlign='center'>New Condos in </Typography>
+        <Typography variant="h4" textAlign='center'>New Condos in {city}</Typography>
         <div style={lineStyle}></div>
       </Stack>{" "}
       <CondoCard />
