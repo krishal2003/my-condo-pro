@@ -168,6 +168,7 @@ const NavigationBar = () => {
               {" "}
               <Nav.Link className="navitems">Map</Nav.Link>
             </Link>
+           
             <Nav.Link className="navitems">Videos</Nav.Link>
             <Link href="/about-us" style={{ textDecoration: "none" }}>
               <Nav.Link className="navitems">About Us</Nav.Link>
@@ -184,6 +185,15 @@ const NavigationBar = () => {
                 sx={{ borderRadius: "30px" }}
               >
                 PlatInum Access
+              </Button>
+            </Link>
+            <Link href={`/project`}>
+              <Button
+                color="warning"
+                variant="contained"
+                sx={{ borderRadius: "30px",ml:2 }}
+              >
+                Project
               </Button>
             </Link>
           </Nav>

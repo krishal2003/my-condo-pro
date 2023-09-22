@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -108,6 +108,9 @@ const cardData = [
     occupancy: "2027",
   },
 ];
+
+
+
 
 const CondoCard = () => {
      const lineStyle = {

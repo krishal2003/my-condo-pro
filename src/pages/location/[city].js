@@ -5,6 +5,8 @@ import Head from "next/head";
 import CondoCard from "@/components/CondoCard";
 
 function location() {
+
+  
   const router = useRouter();
   const { city } = router.query;
 
