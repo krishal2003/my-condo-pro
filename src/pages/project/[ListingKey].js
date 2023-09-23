@@ -89,16 +89,16 @@ const PropertyDetailPage = () => {
           <Typography>{propertyData.BuildingName}</Typography>
         </Link>
       </Stack>
-      <ImageGrid />
+      {/* <ImageGrid /> */}
       <Container>
-        {/* <Stack>
+        <Stack>
           <CardMedia
             component="img"
             height="400"
-            image="/house1.jpg"
+            src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt12dbddde5342ce4c/648866ff21a8556da61fa167/GOAL_-_Blank_WEB_-_Facebook_-_2023-06-13T135350.847.png?auto=webp&format=pjpg&width=3840&quality=60"
             alt="Paella dish"
           />
-        </Stack> */}
+        </Stack>
         <Box>
           <Grid container spacing={5} sx={{ my: 0 }}>
             <Grid item xs={12} md={8}>
