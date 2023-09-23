@@ -168,7 +168,7 @@ const NavigationBar = () => {
               {" "}
               <Nav.Link className="navitems">Map</Nav.Link>
             </Link>
-           
+
             <Nav.Link className="navitems">Videos</Nav.Link>
             <Link href="/about-us" style={{ textDecoration: "none" }}>
               <Nav.Link className="navitems">About Us</Nav.Link>
@@ -182,7 +182,14 @@ const NavigationBar = () => {
               <Button
                 color="error"
                 variant="contained"
-                sx={{ borderRadius: "30px" }}
+                sx={{
+                  borderRadius: {
+                    xs: "0px", // 0px for extra-small (xs) devices
+                    sm: "0px", // 0px for small (sm) devices
+                    md: "30px", // 30px for medium (md) devices
+                    lg: "30px", // 30px for large (lg) devices
+                  },mb:1
+                }}
               >
                 PlatInum Access
               </Button>
@@ -191,7 +198,20 @@ const NavigationBar = () => {
               <Button
                 color="warning"
                 variant="contained"
-                sx={{ borderRadius: "30px",ml:2 }}
+                sx={{
+                  borderRadius: {
+                    xs: "0px", // 0px for extra-small (xs) devices
+                    sm: "0px", // 0px for small (sm) devices
+                    md: "30px", // 30px for medium (md) devices
+                    lg: "30px", // 30px for large (lg) devices
+                  },
+                  ml: {
+                    xs: "0px", // 0px for extra-small (xs) devices
+                    sm: "0px", // 0px for small (sm) devices
+                    md: "2", // 2 for medium (md) devices
+                    lg: "5px", // 2 for large (lg) devices
+                  },
+                }}
               >
                 Project
               </Button>

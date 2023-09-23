@@ -119,7 +119,7 @@ const CondoPage = () => {
       // Fetch property data from the API
       axios
         .get(
-          "https://api.bridgedataoutput.com/api/v2/OData/test/Property?access_token=6baca547742c6f96a6ff71b138424f21"
+          `https://api.bridgedataoutput.com/api/v2/OData/itso/Property?access_token=${process.env.NEXT_PUBLIC_ACCESS_TOKEN}&$top=10`
         )
         .then((response) => {
           // Update the state with the fetched data
@@ -155,7 +155,7 @@ const CondoPage = () => {
                     component="img"
                     alt={card.title}
                     height="140"
-                    image={card.imageSrc}
+                    src={card.MediaUrl}
                   />
                   <CardContent>
                     <Typography variant="h6" component="div">
@@ -171,7 +171,7 @@ const CondoPage = () => {
                       {card.City},{card.StateOrProvince}
                     </Typography>
                     <Typography variant="subtitle2">
-                      {card.BusinessName}
+                      {card.ListAgentFullName}
                     </Typography>
                   </CardContent>
                 </Card>

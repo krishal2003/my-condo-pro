@@ -30,7 +30,7 @@ const PropertyDetailPage = () => {
       // Fetch property data from the API using the ListingKey from the URL
       axios
         .get(
-          `https://api.bridgedataoutput.com/api/v2/OData/test/Property('${ListingKey}')?access_token=6baca547742c6f96a6ff71b138424f21`
+          `https://api.bridgedataoutput.com/api/v2/OData/itso/Property('${ListingKey}')?access_token=${process.env.NEXT_PUBLIC_ACCESS_TOKEN}`
         )
         .then((response) => {
           // Update the state with the fetched data
@@ -141,7 +141,7 @@ const PropertyDetailPage = () => {
                     {propertyData.BathroomsTotalInteger} bath
                   </Typography>
                   <Typography variant="body1">
-                    {propertyData.LotSizeSquareFeet} sq.ft
+                    {propertyData.BuildingAreaTotal} sq.ft
                   </Typography>
                 </Stack>
                 <Typography variant="body1">For Sale</Typography>
@@ -233,7 +233,7 @@ const PropertyDetailPage = () => {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      {propertyData.ShowingContactPhone}
+                      {propertyData.ListOfficePhone}
                     </Typography>
                   </Stack>
                   <Stack flexDirection="row">
@@ -244,7 +244,7 @@ const PropertyDetailPage = () => {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      {propertyData.LotSizeSquareFeet} sq.ft
+                      {propertyData.BuildingAreaTotal} sq.ft
                     </Typography>
                   </Stack>
                   <Stack flexDirection="row">
@@ -261,13 +261,13 @@ const PropertyDetailPage = () => {
 
                   <Stack flexDirection="row">
                     <Typography variant="body1" fontWeight="bold">
-                      Tax Year:
+                      Assessment Year:
                     </Typography>
                     <Typography
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      {propertyData.TaxYear} AD
+                      {propertyData.ITSO_AssessmentYear} AD
                     </Typography>
                   </Stack>
                 </Stack>
@@ -275,24 +275,24 @@ const PropertyDetailPage = () => {
                 <Stack>
                   <Stack flexDirection="row">
                     <Typography variant="body1" fontWeight="bold">
-                      Builder Name:
+                      Agent Name:
                     </Typography>
                     <Typography
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      {propertyData.BuilderName}
+                      {propertyData.ListAgentFullName}
                     </Typography>
                   </Stack>{" "}
                   <Stack flexDirection="row">
                     <Typography variant="body1" fontWeight="bold">
-                      Association Name:
+                      Parcel Number:
                     </Typography>
                     <Typography
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      {propertyData.AssociationName2}
+                      {propertyData.ParcelNumber}
                     </Typography>
                   </Stack>{" "}
                   <Stack flexDirection="row">
@@ -303,7 +303,7 @@ const PropertyDetailPage = () => {
                       variant="body1"
                       sx={{ pl: 1, color: "text.disabled" }}
                     >
-                      {propertyData.OnMarketDate}
+                      {propertyData.ListingContractDate}
                     </Typography>
                   </Stack>
                 </Stack>
@@ -412,10 +412,10 @@ const PropertyDetailPage = () => {
             </Typography>
           </Typography>{" "}
           <Typography variant="body1" color="text.secondary" fontWeight="bold">
-            TOTAL NUMBER OF ROOMS <br />
+            Agent Email <br />
             <Typography color="text.disabled">
               {" "}
-              {propertyData.RoomsTotal}
+              {propertyData.ListAgentEmail}
             </Typography>
           </Typography>{" "}
           <Typography variant="body1" color="text.secondary" fontWeight="bold">
@@ -440,17 +440,18 @@ const PropertyDetailPage = () => {
             </Typography>
           </Typography>{" "}
           <Typography variant="body1" color="text.secondary" fontWeight="bold">
-            TAX YEAR <br />
+            Assessment Year:
+            <br />
             <Typography color="text.disabled">
               {" "}
-              {propertyData.TaxYear}
+              {propertyData.ITSO_AssessmentYear}
             </Typography>
           </Typography>{" "}
           <Typography variant="body1" color="text.secondary" fontWeight="bold">
-            CARPORT SPACES <br />
+            Property Type <br />
             <Typography color="text.disabled">
               {" "}
-              {propertyData.CarportSpaces}
+              {propertyData.PropertySubType}
             </Typography>
           </Typography>{" "}
         </Box>
